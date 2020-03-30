@@ -1,0 +1,2266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+
+      <pattern>Buna</pattern>
+
+      <template>BunÄ. Numele meu este Miki. Care este numele tÄu? 
+      </template>
+
+  </category>
+<category>
+      <pattern>Ma cheama *</pattern>
+      <template>
+     ÃncÃ¢ntatÄ de cunoÈtinÈÄ , <set name="nume"><star /></set> ð.Te voi ajuta sÄ-Èi gÄseÈti serialul dramÄ perfect pentru tine.
+    EÈti gata sÄ  Ã®ncepem?
+                 <button>
+                            <text>Da</text>
+                            <postback>Da</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+  </template>
+    </category>
+
+     <category>
+      <pattern>Ma numesc * </pattern>
+     <template>
+     ÃncÃ¢ntatÄ de cunoÈtinÈÄ , <set name="nume"><star /></set> ð.Te voi ajuta sÄ-Èi gÄseÈti serialul dramÄ perfect pentru tine.
+    EÈti gata sÄ  Ã®ncepem?
+                 <button>
+                            <text>Da</text>
+                            <postback>Da</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+  </template>
+    </category>
+    
+      <category>
+      <pattern>Numele meu este * </pattern>
+      <template>
+     ÃncÃ¢ntatÄ de cunoÈtinÈÄ , <set name="nume"><star /></set> ð.Te voi ajuta sÄ-Èi gÄseÈti serialul dramÄ perfect pentru tine.
+    EÈti gata sÄ  Ã®ncepem?
+                 <button>
+                            <text>Da</text>
+                            <postback>Da</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+  </template>
+    </category>
+    
+      <category>
+      	<pattern>Sunt * </pattern>
+      <template>
+     ÃncÃ¢ntatÄ de cunoÈtinÈÄ , <set name="nume"><star /></set> ð.Te voi ajuta sÄ-Èi gÄseÈti serialul dramÄ perfect pentru tine.
+    EÈti gata sÄ  Ã®ncepem?
+                 <button>
+                            <text>Da</text>
+                            <postback>Da</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+  </template>
+    </category>
+
+   
+   
+  <category>
+
+      <pattern>Salut</pattern>
+
+       <template>BunÄ. Numele meu este Miki. Pe tine cum te cheama? 
+      </template>
+
+  </category>
+
+
+  
+   <category>
+
+      <pattern>Buna dimineata</pattern>
+
+       <template>BunÄ. Numele meu este Miki. Pe tine cum te cheama? 
+      </template>
+
+  </category>
+
+
+  
+  <category>
+
+      <pattern>Buna ziua </pattern>
+
+      <template>BunÄ. Numele meu este Miki. Pe tine cum te cheama? 
+      </template>
+
+  </category>
+
+
+  
+  <category>
+
+      <pattern>Buna seara </pattern>
+
+       <template>BunÄ. Numele meu este Miki. Pe tine cum te cheama? 
+      </template>
+  </category>
+
+ 
+  <category>
+      <pattern> Nu </pattern>
+            
+      <template>Bine. Ãmi pare rÄu cÄ nu te pot ajuta ð. Iti doresc o zi frumoasÄ in continuare! ð</template>
+  </category>
+  <category>
+            <pattern> Da </pattern>
+            <template> Super! ð Pe lÃ¢ngÄ dramÄ vrei sÄ mai conÈinÄ Èi alt gen serialul tÄu? 
+              <button>
+                            <text>Da</text>
+                            <postback>Da1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu1</postback>
+              </button>
+            
+            </template>
+</category>
+ <category>
+            <pattern>Nu1</pattern>
+ 
+            <template> Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza</postback>
+              </button>
+                            <button>
+                            <text>SpaniolÄ</text>
+                            <postback>Spaniola</postback>
+              </button>
+                            <button>
+                            <text>ItalianÄ</text>
+                            <postback>Italiana</postback>
+              </button>
+                            <button>
+                            <text>RomÃ¢nÄ</text>
+                            <postback>Romana</postback>
+              </button>
+
+            
+            </template>
+
+</category>
+
+<category>
+            <pattern>Engleza</pattern>
+             <template>
+
+              Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+            
+  </category>
+
+
+
+ <category>
+
+      <pattern>Mai nou de anii 2000</pattern>
+
+      <template>
+
+
+            CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>Mai putin de 3 sezoane</postback>
+        </button>
+
+
+   </template>
+
+</category>
+
+
+
+   <category>
+
+      <pattern>Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+       
+         Serialele care Èi s-ar putea potrivi sunt : Dr. House/ Prietenie pe muchie de cuÈit/ MicuÈele mincinoase/ Regina. 
+         Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                                  <button>
+                                        <text>Dr. House</text>
+                                        <url>https://www.cinemagia.ro/filme/house-md-dr-house-20009/</url>
+                                  </button>
+                                    <button>
+                                        <text>Prietenie pe muchie de cuÈit</text>
+                                        <url>https://www.cinemagia.ro/filme/niptuck-prietenie-pe-muchie-de-cutit-11515/</url>
+                                  </button>
+                                    <button>
+                                        <text>MicuÈele mincinoase</text>
+                                        <url>https://www.cinemagia.ro/filme/pretty-little-liars-559103/</url>
+                                  </button>
+                                    <button>
+                                        <text>Regina</text>
+                                        <url>https://www.cinemagia.ro/filme/reign-590185/</url>
+                                  </button>
+          
+  
+
+      </template>
+
+    </category>
+    
+
+    <category>
+
+      <pattern>Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+       Serialele care Èi s-ar putea potrivi sunt :  Titanii/ Praf de puÈcÄ.
+       Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                                 <button>
+                                        <text>Titanii</text>
+                                        <url>https://www.cinemagia.ro/filme/remember-the-titans-titanii-4/</url>
+                                  </button>
+                                   <button>
+                                        <text>Praf de puÈcÄ</text>
+                                        <url>https://www.cinemagia.ro/filme/gunpowder-2169515/</url>
+                                  </button>
+
+      </template>
+
+    </category>
+   
+     
+
+ <category>
+
+      <pattern>Mai vechi de anii 2000</pattern>
+
+      <template>
+
+      
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>Mai mult de 3 sezoane1</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>Mai putin de 3 sezoane1</postback>
+        </button>
+
+
+   </template>
+
+</category>
+
+
+
+   <category>
+
+      <pattern>Mai mult de 3 sezoane1</pattern>
+
+      <template>
+      Serialele care Èi s-ar putea potrivi sunt :  Dinastia/ Alfred Hitchcock Presents/ Dallas/ Holby City.
+          Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+
+
+  <button>
+                                        <text>Dinastia</text>
+                                        <url>https://www.cinemagia.ro/filme/dynasty-dinastia-5608/</url>
+                                  </button>
+                                   <button>
+                                        <text>Alfred Hitchcock Presents</text>
+                                        <url>https://www.cinemagia.ro/filme/alfred-hitchcock-presents-489849/</url>
+                                  </button>
+                                   <button>
+                                        <text>Dallas</text>
+                                        <url>https://www.cinemagia.ro/filme/dallas-2150/</url>
+                                  </button>
+                                   <button>
+                                        <text>Holby City</text>
+                                        <url>https://www.cinemagia.ro/filme/holby-city-40058/</url>
+                                  </button>
+      
+
+      </template>
+
+    </category>
+    
+
+    <category>
+
+      <pattern>Mai putin de 3 sezoane1</pattern>
+
+      <template>
+
+        Serialele care Èi s-ar putea potrivi sunt :  Marile SperanÈe/ Days of Our Lives/ Queenie .
+       Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+
+                                 <button>
+                                        <text>Marile SperanÈe</text>
+                                        <url>https://www.cinemagia.ro/filme/great-expectations-marile-sperante-33077/</url>
+                                  </button>
+                                   <button>
+                                        <text>Days of Our Lives</text>
+                                        <url>https://www.cinemagia.ro/filme/days-of-our-lives-zile-din-viata-noastra-1731/</url>
+                                  </button>
+                                   <button>
+                                        <text>Queenie</text>
+                                        <url>https://www.cinemagia.ro/filme/queenie-6301/</url>
+                                  </button>
+
+      </template>
+
+    </category>
+   
+
+
+<category>
+            <pattern>Italiana</pattern>
+            <template>
+                Serialele care Èi s-ar putea potrivi sunt :  Citadela/ Pompei - Povestea unui vulcan/ PrinÈul deÈertului .
+        Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                                  <button>
+                                        <text>Citadela</text>
+                                        <url>https://www.cinemagia.ro/filme/la-cittadella-citadela-10708/</url>
+                                  </button>
+                                  <button>
+                                        <text>Pompei - Povestea unui vulcan</text>
+                                        <url>https://www.cinemagia.ro/filme/pompei-ieri-oggi-domani-pompei-18552/</url>
+                                  </button>
+                                    <button>
+                                   <text>PrinÈul deÈertului</text>
+                                        <url>https://www.cinemagia.ro/filme/il-principe-del-deserto-the-law-of-the-desert-printul-desertului-28170/</url>
+                                  </button>
+            </template>
+           
+</category>
+
+<category>
+            <pattern>Romana</pattern>
+            <template>
+               Serialele care Èi s-ar putea potrivi sunt :  Pacatele Evei/ Vocea inimii .
+        Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                                  <button>
+                                        <text>Pacatele Evei</text>
+                                        <url>https://www.cinemagia.ro/filme/pacatele-evei-13562/</url>
+                                  </button>
+
+                              
+                                  <button>
+                                        <text>Vocea inimii</text>
+                                        <url>https://www.cinemagia.ro/filme/vocea-inimii-16165/</url>
+                                  </button>
+            </template>
+</category>
+
+
+<category>
+            <pattern>Spaniola</pattern>
+            <template>
+               Serialul care Èi s-ar putea potrivi este : E.R..
+        Doar apÄsÃ¢nd mai jos pe numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                                  <button>
+                                        <text>E.R.</text>
+                                        <url>https://www.cinemagia.ro/filme/er-251712/</url>
+                                  </button>
+            </template>
+</category>
+
+<category>
+            <pattern>Da1</pattern>
+            <template> Ok, sÄ vedem ce Ã®Èi putem recomanda.Ce alt gen vrei sÄ mai conÈinÄ serialul pe care Ã®l cauÈi?
+              <button>
+                            <text>AcÈiune</text>
+                            <postback>Actiune</postback>
+              </button>
+                            <button>
+                            <text>AventurÄ</text>
+                            <postback>Aventura</postback>
+              </button>
+                            <button>
+                            <text>Comedie</text>
+                            <postback>Comedie</postback>
+              </button>
+                            <button>
+                            <text>CrimÄ</text>
+                            <postback>Crima</postback>
+              </button>             <button>
+                            <text>Mister</text>
+                            <postback>Mister</postback>
+              </button>
+                            <button>
+                            <text>Romantic</text>
+                            <postback>Romantic</postback>
+              </button>
+                            <button>
+                            <text>Horror</text>
+                            <postback>Horror</postback>
+              </button>
+
+            
+            </template>
+
+</category>
+ <category>
+            <pattern>Actiune</pattern>
+
+ 
+            <template>Ai fÄcut o alegere grozavÄ!ð  Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza1</postback>
+              </button>
+              <button>
+                            <text>SpaniolÄ</text>
+                            <postback>Spaniola1</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+
+        <pattern>Engleza1</pattern>
+
+        <template>
+
+             Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>1Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>1Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+ </category>
+
+ <category>
+
+      <pattern>1Mai nou de anii 2000</pattern>
+
+      <template>
+
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>1Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>1Mai putin de 3 sezoane</postback>
+        </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>1Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>Incheiat</pattern>
+
+      <template>
+
+             Serialul care Èi s-ar putea potrivi este : Lege si FÄrÄdelege .
+      Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Lege Èi FÄrÄdelege</text>
+                                        <url>https://www.cinemagia.ro/filme/the-shield-the-shield-lege-si-faradelege-10617/</url>
+                                  </button>
+            
+
+</template>
+
+</category>
+<category>
+
+      <pattern>In curs de desfasurare</pattern>
+
+      <template>
+
+           Serialele care Èi s-ar putea potrivi sunt :  Prison Break/ Arrow .
+      Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Prison Break</text>
+                                        <url>https://www.cinemagia.ro/filme/prison-break-19951/</url>
+                                  </button>
+            
+               <button>
+                                        <text>Arrow</text>
+                                        <url>https://www.cinemagia.ro/filme/arrow-578449/</url>
+                                  </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>1Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+          Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale. 
+         
+         Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Actiune1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+</template>
+
+</category>
+
+ <category>
+
+      <pattern>1Mai vechi de anii 2000</pattern>
+
+      <template>
+
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>2Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>2Mai putin de 3 sezoane</postback>
+        </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>2Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sa fie serialul pe care il cauti?
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>1Incheiat</postback>
+        </button>
+        <button>
+                            <text>Ãn curs de desfÄÈurare</text>
+                            <postback>1In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>1Incheiat</pattern>
+
+      <template>
+
+            Serialele care Èi s-ar putea potrivi sunt :  Miami Vice/ V.I.P/ Walker, Texas Ranger.
+            Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Miami Vice</text>
+                                        <url>https://www.cinemagia.ro/filme/miami-vice-747/</url>
+        </button>
+        <button>
+                                        <text>V.I.P</text>
+                                        <url>https://www.cinemagia.ro/filme/vip-13674/</url>
+        </button>
+        <button>
+                                        <text>Walker, Texas Ranger</text>
+                                        <url>https://www.cinemagia.ro/filme/walker-texas-ranger-walker-politist-texan-12623/</url>
+        </button>
+            
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>1In curs de desfasurare</pattern>
+
+      <template>
+
+           Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+           Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Actiune1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>2Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+         Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale. 
+         Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Actiune</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>Spaniola1</pattern>
+
+      <template>
+            Serialul care Èi s-ar putea potrivi este : Sin Senos SÃ­ Hay ParaÃ­so .
+            Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Sin Senos SÃ­ Hay ParaÃ­so</text>
+                                        <url>https://www.cinemagia.ro/filme/sin-senos-si-hay-paraiso-1079263/</url>
+                                  </button>
+</template>
+
+</category>
+
+        
+     <category>
+            <pattern>Aventura</pattern>
+
+ 
+            <template>BunÄ alegere! ð  Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza2</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana1</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+
+        <pattern>Engleza2</pattern>
+
+        <template>
+
+             Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>2Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>2Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+ </category>
+
+ <category>
+
+      <pattern>2Mai nou de anii 2000</pattern>
+
+      <template>
+
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>3Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>3Mai putin de 3 sezoane</postback>
+        </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>3Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>2Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>2In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>2Incheiat</pattern>
+
+      <template>
+
+           Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale. 
+           Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Aventura1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+            
+
+</template>
+
+</category>
+<category>
+
+      <pattern>2In curs de desfasurare</pattern>
+
+      <template>
+
+          Serialul care Èi s-ar putea potrivi este : Game of Thrones .
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Game of Thrones</text>
+                                        <url>https://www.cinemagia.ro/filme/game-of-thrones-566508/</url>
+                                  </button>
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>3Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>3Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>3In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>3Incheiat</pattern>
+
+      <template>
+
+                      
+          Serialul care Èi s-ar putea potrivi este : Demonii lui Da Vinci .
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Demonii lui Da Vinci</text>
+                                        <url>https://www.cinemagia.ro/filme/da-vincis-demons-578838/</url>
+                                  </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>3In curs de desfasurare</pattern>
+
+      <template>
+ Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale. 
+ Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Aventura1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+            
+               
+</template>
+
+</category>
+
+
+<category>
+
+      <pattern>2Mai vechi de anii 2000</pattern>
+
+      <template>
+            Serialul care Èi s-ar putea potrivi este : Noile aventuri ale lui Flipper .
+            Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Noile aventuri ale lui Flipper</text>
+                                        <url>https://www.cinemagia.ro/filme/flipper-noile-aventuri-ale-lui-flipper-5366/</url>
+                                  </button>
+</template>
+
+</category>
+<category>
+
+      <pattern>Romana1</pattern>
+
+      <template>
+            Serialul care Èi s-ar putea potrivi este : Hacker .
+            Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Hacker</text>
+                                        <url>https://www.cinemagia.ro/filme/hacker-8633/</url>
+                                  </button>
+</template>
+
+</category>
+
+        
+     <category>
+            <pattern>Comedie</pattern>
+
+ 
+            <template>Super. Te vei amuza pe cinste! ð Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza3</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana2</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+
+        <pattern>Engleza3</pattern>
+
+        <template>
+
+             Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>3Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>3Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+ </category>
+
+ <category>
+
+      <pattern>3Mai nou de anii 2000</pattern>
+
+      <template>
+
+         Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+         Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Comedie1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+      <pattern>3Mai vechi de anii 2000</pattern>
+
+      <template>
+           
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>4Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>4Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>4Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+            Serialele care Èi s-ar putea potrivi sunt :  Freaks and Geeks/ Al 7-lea cer.
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+ <button>
+                                        <text>Freaks and Geeks</text>
+                                        <url>https://www.cinemagia.ro/filme/freaks-and-geeks-17985/</url>
+                                  </button>
+                                  <button>
+                                        <text>Al 7-lea cer</text>
+                                        <url>https://www.cinemagia.ro/filme/7th-heaven-al-7-lea-cer-1709/</url>
+                                  </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>4Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+         Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+         Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Comedie1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>Romana2</pattern>
+
+      <template>
+           Serialele care Èi s-ar putea potrivi sunt :  MoÈtenirea/ Pariu cu viaÈa.
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>MoÈtenirea</text>
+                                        <url>https://www.cinemagia.ro/filme/mostenirea-566463/</url>
+                                  </button>
+                                  <button>
+                                        <text>Pariu cu viaÈa</text>
+                                        <url>https://www.cinemagia.ro/filme/pariu-cu-viata-567308/</url>
+                                  </button>
+</template>
+
+</category>
+        
+       <category>
+            <pattern>Crima</pattern>
+
+ 
+            <template> CriminalÄ alegere!ð ð Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza4</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana3</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+
+        <pattern>Engleza4</pattern>
+
+        <template>
+
+             Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>4Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>4Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+ </category>
+
+ <category>
+
+      <pattern>4Mai nou de anii 2000</pattern>
+
+      <template>
+
+          
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>5Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>5Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>5Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>4Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>4In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>4Incheiat</pattern>
+
+      <template>
+
+                      
+          Serialele care Èi s-ar putea potrivi sunt :  Breaking Bad/ C.S.I.: NY/ MinÈi criminale/ Districtul/ Divizia .
+          Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Breaking Bad</text>
+                                        <url>https://www.cinemagia.ro/filme/breaking-bad-24790/</url>
+                                  </button>
+       <button>
+                                        <text>C.S.I.: NY</text>
+                                        <url>https://www.cinemagia.ro/filme/csi-ny-csi-new-york-criminalistii-4978/</url>
+                                  </button>
+      <button>
+                                        <text>MinÈi criminale</text>
+                                        <url>https://www.cinemagia.ro/filme/criminal-minds-minti-criminale-14995/</url>
+                                  </button>
+       <button>
+                                        <text>Districtul</text>
+                                        <url>https://www.cinemagia.ro/filme/the-district-districtul-3327/</url>
+                                  </button>
+      <button>
+                                        <text>Divizia</text>
+                                        <url>https://www.cinemagia.ro/filme/the-division-divizia-7208/</url>
+                                  </button>
+</template>
+
+</category>
+<category>
+
+      <pattern>4In curs de desfasurare</pattern>
+
+      <template>
+
+          Serialul care Èi s-ar putea potrivi este : Dexter.
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+ <button>
+                                        <text>Dexter</text>
+                                        <url>https://www.cinemagia.ro/filme/dexter-19996/</url>
+                                  </button>
+
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>5Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>5Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>5In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>5Incheiat</pattern>
+
+      <template>
+
+          Serialul care Èi s-ar putea potrivi este : Hannibal.
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          <button>
+                                        <text>Hannibal</text>
+                                        <url>https://www.cinemagia.ro/filme/hannibal-589333/</url>
+          </button>
+
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>5In curs de desfasurare</pattern>
+
+      <template>
+          Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+          Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Crima1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+            
+    </template>
+
+</category>
+
+<category>
+
+      <pattern>4Mai vechi de anii 2000</pattern>
+
+      <template>
+           
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>6Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>6Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>6Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+            Serialele care Èi s-ar putea potrivi sunt : The Streets of San Francisco/  Verdict crimÄ/ Lege Èi ordine/ Dosarele FBI.
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                              <button>
+                                        <text>The Streets of San Francisco</text>
+                                        <url>https://www.cinemagia.ro/filme/the-streets-of-san-francisco-37282/</url>
+                              </button>
+                              <button>
+                                        <text>Verdict crimÄ</text>
+                                        <url>https://www.cinemagia.ro/filme/murder-she-wrote-verdict-crima-6511/</url>
+                              </button>
+                              <button>
+                                        <text>Lege Èi ordine</text>
+                                        <url>https://www.cinemagia.ro/filme/law-order-lege-si-ordine-12246/</url>
+                              </button>
+                              <button>
+                                        <text>Dosarele FBI</text>
+                                        <url>https://www.cinemagia.ro/filme/the-fbi-files-489813/</url>
+                              </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>6Mai putin de 3 sezoane</pattern>
+
+      <template>
+          Serialele care Èi s-ar putea potrivi sunt :  Jack the Ripper/ Petrocelli.
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+ <button>
+                                        <text>Jack the Ripper</text>
+                                        <url>https://www.cinemagia.ro/filme/jack-the-ripper-jack-spintecatorul-11802/</url>
+                                  </button>
+                                  <button>
+                                        <text>Petrocelli</text>
+                                        <url>https://www.cinemagia.ro/filme/petrocelli-30756/</url>
+                                  </button>
+
+
+</template>
+
+</category>
+<category>
+
+      <pattern>Romana3</pattern>
+
+      <template>
+          Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+          Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Crima1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+</template>
+
+</category>
+
+<category>
+            <pattern>Mister</pattern>
+
+ 
+            <template>
+
+              InteresantÄ alegere. Bun venit Ã®n universul misterelor ð ! Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>5Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>5Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+</category>
+
+
+
+ <category>
+
+      <pattern>5Mai nou de anii 2000</pattern>
+
+      <template>
+
+          
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>7Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>7Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>7Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>6Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>6In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>6Incheiat</pattern>
+
+      <template>
+
+         Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+         Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Mister1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+      </template>
+
+</category>
+<category>
+
+      <pattern>6In curs de desfasurare</pattern>
+         <template>
+
+                      
+        Serialul care Èi s-ar putea potrivi este : Riverdale .
+      Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Riverdale</text>
+                                        <url>https://www.cinemagia.ro/filme/riverdale-1083861/</url>
+                                  </button>
+       
+</template>   
+      
+</category>
+
+
+<category>
+
+      <pattern>7Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>7Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>7In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+<category>
+
+      <pattern>7Incheiat</pattern>
+
+      <template>
+
+        Serialele care Èi s-ar putea potrivi sunt :  13 Reasons Why/ The SinnerÂ .
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          <button>
+                                        <text>13 Reasons Why</text>
+                                        <url>https://www.cinemagia.ro/filme/13-reasons-why-579945/</url>
+          </button>
+          <button>
+                                        <text>The SinnerÂ </text>
+                                        <url>https://www.cinemagia.ro/filme/the-sinner-2022179/Â </url>
+          </button>
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>7In curs de desfasurare</pattern>
+
+      <template>
+         Serialul care Èi s-ar putea potrivi este : Sharp Objects .
+        Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+
+            <button>
+                                        <text>Sharp ObjectsÂ </text>
+                                        <url>https://www.cinemagia.ro/filme/sharp-objects-1178847/Â </url>
+          </button>
+    </template>
+
+</category>
+
+<category>
+
+      <pattern>5Mai vechi de anii 2000</pattern>
+
+      <template>
+           
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>8Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>8Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>8Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+            Serialele care Èi s-ar putea potrivi sunt : Agatha Christie's Poirot/  Dosarele X/ Farmece.
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                              <button>
+                                        <text>Agatha Christie's Poirot</text>
+                                        <url>https://www.cinemagia.ro/filme/agatha-christies-poirot-7796/</url>
+                              </button>
+                              <button>
+                                        <text>Dosarele X</text>
+                                        <url>https://www.cinemagia.ro/filme/the-x-files-6398/</url>
+                              </button>
+                              <button>
+                                        <text>Farmece</text>
+                                        <url>https://www.cinemagia.ro/filme/charmed-farmece-5385/</url>
+                              </button>
+                              
+</template>
+
+</category>
+<category>
+
+      <pattern>8Mai putin de 3 sezoane</pattern>
+
+      <template>
+       Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+       Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Mister1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+
+</template>
+
+</category>
+
+        
+       
+
+     
+       <category>
+            <pattern>Romantic</pattern>
+
+ 
+            <template>PregÄteÈte-te! Vei simÈi cum fiorul iubirii te Ã®nvÄluie!ð Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza5</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana4</postback>
+              </button>
+               <button>
+                            <text>SpaniolÄ </text>
+                            <postback>Spaniola</postback>
+              </button>
+               <button>
+                            <text>TurcÄ </text>
+                            <postback>Turca</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+
+        <pattern>Engleza5</pattern>
+
+        <template>
+
+             Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>6Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>6Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+ </category>
+
+ <category>
+
+      <pattern>6Mai nou de anii 2000</pattern>
+
+      <template>
+
+          
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>9Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>9Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>9Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>8Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>8In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>8Incheiat</pattern>
+
+      <template>
+
+                      
+          Serialele care Èi s-ar putea potrivi sunt :  Anatomia lui Grey/ Jurnalele vampirilor .
+          Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Anatomia lui Grey</text>
+                                        <url>https://www.cinemagia.ro/filme/greys-anatomy-anatomia-lui-grey-17287/</url>
+                                  </button>
+       <button>
+                                        <text>Jurnalele vampirilor</text>
+                                        <url>https://www.cinemagia.ro/filme/the-vampire-diaries-44267/</url>
+                                  </button>
+    
+</template>
+
+</category>
+<category>
+
+      <pattern>8In curs de desfasurare</pattern>
+
+      <template>
+
+          Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+          Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Romantic1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>9Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+        Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+        Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Romantic1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>6Mai vechi de anii 2000</pattern>
+
+      <template>
+
+          
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>10Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>10Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+<category>
+
+      <pattern>10Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>9Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>9In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>9Incheiat</pattern>
+
+      <template>
+
+                      
+         
+  Serialul care Èi s-ar putea potrivi este : Destine secrete .
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>Destine secrete</text>
+                                        <url>https://www.cinemagia.ro/filme/all-my-children-destine-secrete-5773/</url>
+                                  </button>
+   
+    
+</template>
+
+</category>
+<category>
+
+      <pattern>9In curs de desfasurare</pattern>
+
+      <template>
+
+          Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+          Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Romantic1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>10Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+        Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+        Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Romantic1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>Romana4</pattern>
+
+      <template>
+           Serialele care Èi s-ar putea potrivi sunt :  Numai iubirea/ Aniela/ Narcisa sÄlbaticÄ.
+ Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Numai iubirea</text>
+                                        <url>https://www.cinemagia.ro/filme/numai-iubirea-10609/</url>
+                                  </button>
+                                  <button>
+                                        <text>Aniela</text>
+                                        <url>https://www.cinemagia.ro/filme/aniela-44371/</url>
+                                  </button>
+
+<button>
+                                        <text>Narcisa sÄlbaticÄ</text>
+                                        <url>https://www.cinemagia.ro/filme/narcisa-salbatica-566462/</url>
+                                  </button>
+</template>
+
+</category>
+<category>
+
+      <pattern>Spaniola2</pattern>
+
+      <template>
+        
+  Serialul care Èi s-ar putea potrivi este : Prizoniera .
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Prizoniera</text>
+                                        <url>https://www.cinemagia.ro/filme/prisionera-prizoniera-17838/</url>
+                                  </button>
+                                 
+</template>
+
+</category>
+<category>
+
+      <pattern>Turca</pattern>
+
+      <template>
+           
+  Serialul care Èi s-ar putea potrivi este : Bizim Hikaye .
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Bizim Hikaye</text>
+                                        <url>https://www.cinemagia.ro/filme/bizim-hikaye-2112435/</url>
+</button>
+                                  
+</template>
+
+</category>
+
+       
+
+     
+       <category>
+            <pattern>Horror</pattern>
+
+ 
+            <template>Grozav. Ai fÄcut o alegere indrÄzneaÈÄ!ð Ãn ce limbÄ vrei sÄ fie serialul pe care Ã®l cauÈi? 
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza6</postback>
+              </button>
+              <button>
+                            <text>ItalianÄ </text>
+                            <postback>Italiana1</postback>
+              </button>
+              
+            </template>
+</category>
+
+ <category>
+
+        <pattern>Engleza6</pattern>
+
+        <template>
+
+             Cam Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul? 
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>7Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>7Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+ </category>
+
+ <category>
+
+      <pattern>7Mai nou de anii 2000</pattern>
+
+      <template>
+
+          
+           CÃ¢te sezoane vrei sÄ aibÄ serialul pe care Ã®l cauÈi?
+         <button>
+                            <text>Mai mult de 3 sezoane</text>
+                            <postback>11Mai mult de 3 sezoane</postback>
+        </button>
+        <button>
+                            <text>Mai puÈin de 3 sezoane</text>
+                            <postback>11Mai putin de 3 sezoane</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>11Mai mult de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>10Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>10In curs de desfasurare</postback>
+        </button>
+
+</template>
+
+</category>
+
+<category>
+
+      <pattern>10Incheiat</pattern>
+
+      <template>
+
+                      
+          Serialele care Èi s-ar putea potrivi sunt :  American Horror Story/ Mesaje de dincolo/ The Originals .
+          Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+           
+        <button>
+                                        <text>American Horror Story</text>
+                                        <url>https://www.cinemagia.ro/filme/american-horror-story-567174/</url>
+                                  </button>
+       <button>
+                                        <text>Mesaje de dincolo</text>
+                                        <url>https://www.cinemagia.ro/filme/ghost-whisperer-mesaje-de-dincolo-16345/</url>
+                                  </button>
+                                  <button>
+                                        <text>The Originals</text>
+                                        <url>https://www.cinemagia.ro/filme/the-originals-589679/</url>
+                                  </button>
+    
+</template>
+
+</category>
+<category>
+
+      <pattern>10In curs de desfasurare</pattern>
+
+      <template>
+
+           Serialul care Èi s-ar putea potrivi este : The Walking Dead .
+          Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+                                    <button>
+                                        <text>The Walking Dead</text>
+                                        <url>https://www.cinemagia.ro/filme/the-walking-dead-559018/</url>
+                                  </button>
+            
+               
+</template>
+
+</category>
+<category>
+
+      <pattern>11Mai putin de 3 sezoane</pattern>
+
+      <template>
+
+           Cum vrei sÄ fie serialul pe care Ã®l cauÈi? 
+         <button>
+                            <text>Ãncheiat </text>
+                            <postback>11Incheiat</postback>
+        </button>
+        <button>
+                            <text> Ãn curs de desfÄÈurare </text>
+                            <postback>11In curs de desfasurare</postback>
+        </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>11Incheiat</pattern>
+
+      <template>
+             Serialul care Èi s-ar putea potrivi este : Rosemary's Baby .
+            Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+           
+        <button>
+                                        <text>Rosemary's Baby</text>
+                                        <url>https://www.cinemagia.ro/filme/rosemarys-baby-590698/</url>
+                                  </button>
+  
+    
+</template>
+
+</category>
+<category>
+
+      <pattern>11In curs de desfasurare</pattern>
+
+      <template>
+
+         Serialele care Èi s-ar putea potrivi sunt :  Experimentul/ The Haunting of Hill HouseÂ  .
+          Doar apÄsÃ¢nd pe unul din numele serialelor de mai jos poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+
+               
+        <button>
+                                        <text>Experimentul</text>
+                                        <url>https://www.cinemagia.ro/filme/the-passage-486204/</url>
+                                  </button>
+       <button>
+                                        <text>The Haunting of Hill HouseÂ </text>
+                                        <url>https://www.cinemagia.ro/filme/the-haunting-of-hill-house-1974577/</url>
+                                  </button>
+               
+</template>
+</category>
+<category>
+
+      <pattern>7Mai vechi de anii 2000</pattern>
+
+      <template>
+
+        Ãmi pare rÄu dar nu am nici o recomandare care sÄ se potriveascÄ cerinÈelor tale.
+        Vrei sÄ mai Ã®ncercÄm o datÄ? 
+         <button>
+                            <text>Da</text>
+                            <postback>Horror1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu</postback>
+              </button>
+</template>
+
+</category>
+
+<category>
+
+      <pattern>Italiana1</pattern>
+
+      <template>
+           
+  Serialul care Èi s-ar putea potrivi este : Dracula .
+Doar apÄsÃ¢nd mai jos pe  numele serialului poÈi afla mai multe detalii despre el! ÃÈi urez vizionare plÄcutÄ ! ð
+          
+<button>
+                                        <text>Dracula</text>
+                                        <url>https://www.cinemagia.ro/filme/dracula-blestemul-lui-dracula-10296/</url>
+</button>
+                                  
+</template>
+
+</category>
+ <category>
+
+      <pattern>* alt serial *</pattern>
+
+       <template>Desigur. Cu mare drag! ð  Pe langa drama vrei sa mai contina si alt gen serialul tau?
+      
+               
+                 <button>
+                            <text>Da</text>
+                            <postback>Da1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu1</postback>
+              </button>
+      </template>
+  </category>
+  <category>
+
+      <pattern>* alt serial</pattern>
+
+       <template>Desigur. Cu mare drag! ð  Pe langa drama vrei sa mai contina si alt gen serialul tau?
+      
+               
+                 <button>
+                            <text>Da</text>
+                            <postback>Da1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu1</postback>
+              </button>
+      </template>
+  </category>
+  
+  <category>
+
+      <pattern>* altceva *</pattern>
+
+       <template>Desigur. Cu mare drag! ð Pe langa drama vrei sa mai contina si alt gen serialul tau?
+       
+               
+                 <button>
+                            <text>Da</text>
+                            <postback>Da1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu1</postback>
+              </button>
+      </template>
+  </category>
+  
+  <category>
+
+      <pattern>* altceva</pattern>
+
+       <template>Desigur. Cu mare drag! ð Pe langa drama vrei sa mai contina si alt gen serialul tau?
+       
+               
+                 <button>
+                            <text>Da</text>
+                            <postback>Da1</postback>
+              </button>
+              <button>
+                            <text>Nu</text>
+                            <postback>Nu1</postback>
+              </button>
+      </template>
+  </category>
+
+ 
+ <category>
+            <pattern>Actiune1</pattern>
+
+ 
+            <template>Alege din nou in ce limbÄ vrei sÄ fie serialul cu Actiune pe care Ã®l cauÈi :
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza1</postback>
+              </button>
+              <button>
+                            <text>SpaniolÄ</text>
+                            <postback>Spaniola1</postback>
+              </button>
+            
+            </template>
+</category>
+
+<category>
+            <pattern>Aventura1</pattern>
+
+            <template>Alege din nou in ce limbÄ vrei sÄ fie serialul cu Aventura pe care Ã®l cauÈi :
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza2</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana1</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+            <pattern>Comedie1</pattern>
+
+ 
+            <template>Alege din nou in ce limbÄ vrei sÄ fie serialul de Comedie pe care Ã®l cauÈi :
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza3</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana2</postback>
+              </button>
+            
+            </template>
+</category>
+
+
+       <category>
+            <pattern>Crima1</pattern>
+
+ 
+            <template> Alege din nou in ce limbÄ vrei sÄ fie serialul de gen Crima  pe care Ã®l cauÈi :
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza4</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana3</postback>
+              </button>
+            
+            </template>
+</category>
+
+<category>
+            <pattern>Mister1</pattern>
+
+ 
+            <template>
+
+              Alege din nou Ã®n ce perioadÄ vrei sÄ fie fÄcut serialul cu Mister :
+           <button>
+                              <text>Mai nou de anii 2000</text>
+                              <postback>5Mai nou de anii 2000</postback>
+          </button>
+          <button>
+                              <text>Mai vechi de anii 2000</text>
+                              <postback>5Mai vechi de anii 2000</postback>
+          </button>
+        </template>
+
+</category>
+
+
+<category>
+            <pattern>Romantic1</pattern>
+
+ 
+            <template>Alege din nou in ce limbÄ vrei sÄ fie serialul Romantic pe care Ã®l cauÈi :
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza5</postback>
+              </button>
+              <button>
+                            <text>RomÃ¢nÄ </text>
+                            <postback>Romana4</postback>
+              </button>
+               <button>
+                            <text>SpaniolÄ </text>
+                            <postback>Spaniola</postback>
+              </button>
+               <button>
+                            <text>TurcÄ </text>
+                            <postback>Turca</postback>
+              </button>
+            
+            </template>
+</category>
+
+ <category>
+            <pattern>Horror1</pattern>
+
+ 
+            <template>Alege din nou in ce limbÄ vrei sÄ fie serialul Horror pe care Ã®l cauÈi :
+              <button>
+                            <text>EnglezÄ</text>
+                            <postback>Engleza6</postback>
+              </button>
+              <button>
+                            <text>ItalianÄ </text>
+                            <postback>Italiana1</postback>
+              </button>
+              
+            </template>
+</category>
+
+
+</aiml>

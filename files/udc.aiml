@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <pattern>Buna</pattern>
+    <template>Buna, numele meu este Minerva.Care este numele tau?</template>
   </category>
+<category>
+    <pattern>Ma cheama star</pattern>
+    <template>Incantata de cunostiinta <set name="nume"><star /></set> . Te voi ajuta sa iti gasesti imaginea perfecta pentru ceea ce vrei sa faci cu ea.
+EÈti gata sÄÂ  Ã®ncepem?
+    
+<button>
+    <text>DA</text>
+    <postback>DA</postback>
+</button>
+<button>
+    <text>NU</text>
+    <postback>NU</postback>
+</button></template>
+</category>
+
+<category><pattern>star</pattern><template><srai>MA CHEAMA STAR</srai></template></category>
+
 </aiml>
