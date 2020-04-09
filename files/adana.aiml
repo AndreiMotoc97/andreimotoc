@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- insert your AIML categories here -->
+    
+
+<category>
+    <pattern>Buna</pattern>
+     <template>Buna <set name=" Buna"><star /></set>!Pe mine ma cheama <bot name="name" />,pe tine?
+        <think> <set name="topic">getting_know</set></think>
+    </template>
+</category>
+
+    <category>
+        <pattern>Salut</pattern>
+        <template>Salut <set name=" Salut"><star /></set>!Pe mine ma cheama <bot name="name" />,pe tine?</template>
+    </category>
+ <category>
+	    <pattern>Ma cheama * </pattern>
+	    <template>
+				Imi pare bine sa te cunosc,<set name="numeledoritorului"><star /></set>.Esti gata sa ai o imagine infrumutesata?
+		  <button>
+		      <text>Da</text>
+		      <postback>datype</postback>
+		  </button>  <button>
+		      <text>Nu</text>
+		      <postback>Nu</postback>
+		  </button></template>
+    </category>
+    
+    <category>
+    <pattern>Buna ziua</pattern>
+     <template>Buna ziua, <set name=" Buna ziua"><star /></set>!Pe mine ma cheama <bot name="name" />,pe dumneavoastra?</template>
+</category>
+ <category>
+	    <pattern>Ma numesc * </pattern>
+	    <template>
+				Imi pare bine sa va cunosc,<set name="numeledoritorului"><star /></set>.Sunteti gata sa va infrumutesam imaginea?
+		  <button>
+		      <text>Da</text>
+		      <postback>datype</postback>
+		  </button>  <button>
+		      <text>Nu</text>
+		      <postback>Nu</postback>
+		  </button></template>
+    </category>
+    
+    <category>
+    <pattern>Buna dimineata</pattern>
+     <template>Buna dimineata <set name=" Buna dimineata"><star /></set>!Pe mine ma cheama <bot name="name" />,pe tine?
+</template>
+</category>
+ <category>
+	    <pattern>Sunt * </pattern>
+	    <template>
+				Imi pare bine sa te cunosc,<set name="numeledoritorului"><star /></set>.Esti gata sa iti infrumutesam imagini?
+		  <button>
+		      <text>Da</text>
+		      <postback>datype</postback>
+		  </button>  <button>
+		      <text>Nu</text>
+		      <postback>Nu</postback>
+		  </button></template>
+    </category>
+    
+    <category>
+    <pattern>Buna seara</pattern>
+     <template>Buna seara, <set name=" Buna seara"><star /></set>!Pe mine ma cheama <bot name="name" />,pe tine?</template>
+</category>
+ <category>
+	    <pattern>Ma numesc * </pattern>
+	    <template>
+				Imi pare bine sa te cunosc,<set name="numeledoritorului"><star /></set>.Esti gata sa iti infrumutesam imagini?
+		  <button>
+		      <text>Da</text>
+		      <postback>datype</postback>
+		  </button>  <button>
+		      <text>Nu</text>
+		      <postback>Nu</postback>
+		  </button></template>
+    </category>
+    
+    <category>
+    <pattern>Hello</pattern>
+     <template>Hello <set name=" Buna"><star /></set>!Pe mine ma cheama <bot name="name" />,pe tine?</template>
+</category>
+
+
+<category>
+    <pattern>Nu</pattern>
+    <template>Atunci imi pare rau dar nu pot sa te ajut.
+    </template>
+</category>    
+    
+
+<category>
+    <pattern>datype</pattern>
+    <template>Atunci haide sa incepem prin modelul de imagine pe care il vrei,avem ca si modele:
+    <button>
+        <text>Portrait</text>
+        <postback>portretpoza</postback>
+    </button>
+        <button>
+        <text>Landscape</text>
+        <postback>landscapepoza</postback>
+    </button>
+        <button>
+        <text>Boxed</text>
+        <postback>boxedpoza</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>portretpoza</pattern>
+    <template>Foarte buna alegere,acum ce elemente ai vrea sa aibe?
+<button>
+    <text>Natura</text>
+    <postback>naturabut</postback>
+</button><button>
+    <text>Oameni</text>
+    <postback>oamenibut</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>landscapepoza</pattern>
+    <template>Interesanta alegere, ce elemente doresti ca imaginea ta landscape sa aiba?
+<button>
+    <text>Exemple ale naturii</text>
+    <postback>butnatura</postback>
+</button><button>
+    <text>Personaje</text>
+    <postback>butpersonaje</postback>
+</button></template>
+</category>
+
+<category>
+    <pattern>boxedpoza</pattern>
+    <template>Foarte buna alegere,banuiesc ca vrei pentru instagram, ce elemente vrei sa ai in aceasta imagine boxed?
+<button>
+    <text>Minuni ale naturii</text>
+    <postback>minunenatura</postback>
+</button><button>
+    <text>Oameni si grupuri de oameni</text>
+    <postback>oamenigrup</postback>
+</button><button>
+    <text>Animale</text>
+    <postback>butanimale</postback>
+</button></template>
+</category>
+<!-- aici e cu natura pe portret -->
+<category>
+    <pattern>naturabut</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafiltru</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafiltru</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>partur</postback>
+</button><button>
+    <text>50%</text>
+    <postback>fifty</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>sixhos</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>partur</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>tenproc</postback>
+</button><button>
+    <text>20%</text>
+    <postback>twoproc</postback>
+</button><button>
+    <text>30%</text>
+    <postback>threeproc</postback>
+</button><button>
+    <text>40%</text>
+    <postback>fourproc</postback>
+</button><button>
+    <text>45%</text>
+    <postback>fourfiveproc</postback>
+</button></template>
+</category>
+<category>
+    <pattern>fifty</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.Esti multumit de rezultat?
+<button>
+    <text>Da</text>
+    <postback>Da</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button>
+<image>https://i.imgur.com/16oewSn.png</image></template>
+</category>
+<category>
+    <pattern>sixhos</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>sixproc</postback>
+</button><button>
+    <text>70%</text>
+    <postback>sevenproc</postback>
+</button><button>
+    <text>80%</text>
+    <postback>eightproc</postback>
+</button><button>
+    <text>90%</text>
+    <postback>nineproc</postback>
+</button><button>
+    <text>100%</text>
+    <postback>hunproc</postback>
+</button></template>
+</category>
+<category>
+    <pattern>tenproc</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/rDrJOyG.png</image></template>
+</category>
+<category>
+    <pattern>twoproc</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://i.imgur.com/GEFwF9A.png</image></template>
+</category>
+<category>
+    <pattern>threeproc</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://i.imgur.com/TxydVz3.png</image></template>
+</category>
+<category>
+    <pattern>fourproc</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://i.imgur.com/Mig6L6D.png</image></template>
+</category>
+<category>
+    <pattern>fourfiveproc</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://i.imgur.com/4RRBTyN.png</image></template>
+</category>
+<category>
+    <pattern>sixproc</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://i.imgur.com/hTfPzaS.png</image></template>
+</category>
+<category>
+    <pattern>sevenproc</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://i.imgur.com/M5HUTVD.png</image></template>
+</category>
+<category>
+    <pattern>eightproc</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://i.imgur.com/jH4Wyyw.png</image></template>
+</category>
+<category>
+    <pattern>nineproc</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://i.imgur.com/6AXkevO.png</image></template>
+</category>
+<category>
+    <pattern>hunproc</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://i.imgur.com/ZwCoxj3.png</image></template>
+</category>
+<!-- aici se termina natura cu portret -->
+<!-- aici incepe oameni cu potret -->
+<category>
+    <pattern>oamenibut</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafiltruoameni</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafiltruoameni</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>zecepatruscinci</postback>
+</button><button>
+    <text>50%</text>
+    <postback>cincizeci</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>saizeciosuta</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>zecepatruscinci</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>zece</postback>
+</button><button>
+    <text>20%</text>
+    <postback>douazeci</postback>
+</button><button>
+    <text>30%</text>
+    <postback>treizeci</postback>
+</button><button>
+    <text>40%</text>
+    <postback>patruzeci</postback>
+</button><button>
+    <text>45%</text>
+    <postback>patruscinci</postback>
+</button></template>
+</category>
+<category>
+    <pattern>cincizeci</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.Esti multumit de rezultat?
+<button>
+    <text>Da</text>
+    <postback>Da</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button>
+<image>https://i.imgur.com/OV35TWj.png</image></template>
+</category>
+<category>
+    <pattern>saizeciosuta</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>saizeci</postback>
+</button><button>
+    <text>70%</text>
+    <postback>saptezeci</postback>
+</button><button>
+    <text>80%</text>
+    <postback>optzeci</postback>
+</button><button>
+    <text>90%</text>
+    <postback>nouazeci</postback>
+</button><button>
+    <text>100%</text>
+    <postback>osuta</postback>
+</button></template>
+</category>
+<category>
+    <pattern>zece</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/xFaReOx.png</image></template>
+</category>
+<category>
+    <pattern>douazeci</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://i.imgur.com/wIm9elP.png</image></template>
+</category>
+<category>
+    <pattern>treizeci</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://i.imgur.com/Wx7dWwD.png</image></template>
+</category>
+<category>
+    <pattern>patruzeci</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://i.imgur.com/anagoiV.png</image></template>
+</category>
+<category>
+    <pattern>patruscinci</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://i.imgur.com/B5wOknJ.png</image></template>
+</category>
+<category>
+    <pattern>saizeci</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://i.imgur.com/1KhmBhg.png</image></template>
+</category>
+<category>
+    <pattern>saptezeci</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://i.imgur.com/BKT7PNd.png</image></template>
+</category>
+<category>
+    <pattern>optzeci</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://i.imgur.com/QVHP2jS.png</image></template>
+</category>
+<category>
+    <pattern>nouazeci</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://i.imgur.com/biYk45q.png</image></template>
+</category>
+<category>
+    <pattern>osuta</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://i.imgur.com/zzVQsiW.png</image></template>
+</category>
+<!-- aici se termina oameni cu portret -->
+
+
+<!-- aici e cu natura landscape -->
+<category>
+    <pattern>butnatura</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafiltrare</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafiltrare</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>zecpatrcinc</postback>
+</button><button>
+    <text>50%</text>
+    <postback>cin</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>sassut</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>zecpatrcinc</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>zec</postback>
+</button><button>
+    <text>20%</text>
+    <postback>douazec</postback>
+</button><button>
+    <text>30%</text>
+    <postback>treizec</postback>
+</button><button>
+    <text>40%</text>
+    <postback>patruzec</postback>
+</button><button>
+    <text>45%</text>
+    <postback>patrucinc</postback>
+</button></template>
+</category>
+<category>
+    <pattern>cin</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.
+<image>https://i.imgur.com/jMbMTP3.png</image></template>
+</category>
+<category>
+    <pattern>sassut</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>saizec</postback>
+</button><button>
+    <text>70%</text>
+    <postback>saptezec</postback>
+</button><button>
+    <text>80%</text>
+    <postback>optzec</postback>
+</button><button>
+    <text>90%</text>
+    <postback>nouazec</postback>
+</button><button>
+    <text>100%</text>
+    <postback>osut</postback>
+</button></template>
+</category>
+<category>
+    <pattern>zec</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/JErjzMG.png</image></template>
+</category>
+<category>
+    <pattern>douazec</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://i.imgur.com/tKCqdvg.png</image></template>
+</category>
+<category>
+    <pattern>treizec</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://i.imgur.com/ZkRGwN4.png</image></template>
+</category>
+<category>
+    <pattern>patruzec</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://i.imgur.com/yZ22zJP.png</image></template>
+</category>
+<category>
+    <pattern>patrucinc</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://i.imgur.com/XvIiEg1.png</image></template>
+</category>
+<category>
+    <pattern>saizec</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://i.imgur.com/zZ5SyBB.png</image></template>
+</category>
+<category>
+    <pattern>saptezec</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://i.imgur.com/V6lAhr5.png</image></template>
+</category>
+<category>
+    <pattern>optzec</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://i.imgur.com/gasdY2V.png</image></template>
+</category>
+<category>
+    <pattern>nouazec</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://i.imgur.com/t4FFVbQ.png</image></template>
+</category>
+<category>
+    <pattern>osut</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://i.imgur.com/Au8XxGN.png</image></template>
+</category>
+<!-- aici se termina natura landscape -->
+
+<!-- aici e cu oameni landscape -->
+<category>
+    <pattern>butpersonaje</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafiltrarea</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafiltrarea</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>tenfortyfive</postback>
+</button><button>
+    <text>50%</text>
+    <postback>fif</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>sixhundred</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>tenfortyfive</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>tenpercen</postback>
+</button><button>
+    <text>20%</text>
+    <postback>twelvepercen</postback>
+</button><button>
+    <text>30%</text>
+    <postback>thirtpercen</postback>
+</button><button>
+    <text>40%</text>
+    <postback>fourpercen</postback>
+</button><button>
+    <text>45%</text>
+    <postback>fourfivepercen</postback>
+</button></template>
+</category>
+<category>
+    <pattern>fif</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.
+<image>https://i.imgur.com/Zkxb7hr.png</image></template>
+</category>
+<category>
+    <pattern>sixhundred</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>sixpercen</postback>
+</button><button>
+    <text>70%</text>
+    <postback>sevenpercen</postback>
+</button><button>
+    <text>80%</text>
+    <postback>eightpercen</postback>
+</button><button>
+    <text>90%</text>
+    <postback>ninepercen</postback>
+</button><button>
+    <text>100%</text>
+    <postback>hundredpercen</postback>
+</button></template>
+</category>
+<category>
+    <pattern>tenpercen</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/NTM0U4D.png</image></template>
+</category>
+<category>
+    <pattern>twelvepercen</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://img.techpowerup.org/200408/20.png</image></template>
+</category>
+<category>
+    <pattern>thirtpercen</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://img.techpowerup.org/200408/30.png</image></template>
+</category>
+<category>
+    <pattern>fourpercen</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://img.techpowerup.org/200408/40.png</image></template>
+</category>
+<category>
+    <pattern>fivepercen</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://img.techpowerup.org/200408/45.png</image></template>
+</category>
+<category>
+    <pattern>sixpercen</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://img.techpowerup.org/200408/60.png</image></template>
+</category>
+<category>
+    <pattern>sevenpercen</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://img.techpowerup.org/200408/70.png</image></template>
+</category>
+<category>
+    <pattern>eightpercen</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://img.techpowerup.org/200408/80.png</image></template>
+</category>
+<category>
+    <pattern>ninepercen</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://img.techpowerup.org/200408/90.png</image></template>
+</category>
+<category>
+    <pattern>hundredpercen</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://img.techpowerup.org/200408/100.png</image></template>
+</category>
+<!-- aici se termina oameni landscape -->
+
+<!-- aici e cu natura boxed -->
+<category>
+    <pattern>minunenatura</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafiltr</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafiltr</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>zeceperpatru</postback>
+</button><button>
+    <text>50%</text>
+    <postback>cinciper</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>sasepersuta</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>zeceperpatru</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>zecepat</postback>
+</button><button>
+    <text>20%</text>
+    <postback>doipat</postback>
+</button><button>
+    <text>30%</text>
+    <postback>treipat</postback>
+</button><button>
+    <text>40%</text>
+    <postback>patrupat</postback>
+</button><button>
+    <text>45%</text>
+    <postback>patrucincipat</postback>
+</button></template>
+</category>
+<category>
+    <pattern>cinciper</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.
+<image>https://i.imgur.com/SUzeu8p.png</image></template>
+</category>
+<category>
+    <pattern>sasepersuta</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>sasepat</postback>
+</button><button>
+    <text>70%</text>
+    <postback>saptepat</postback>
+</button><button>
+    <text>80%</text>
+    <postback>optpat</postback>
+</button><button>
+    <text>90%</text>
+    <postback>nouapat</postback>
+</button><button>
+    <text>100%</text>
+    <postback>sutapat</postback>
+</button></template>
+</category>
+<category>
+    <pattern>zecepat</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/zsTfJ3j.png</image></template>
+</category>
+<category>
+    <pattern>doipat</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://i.imgur.com/91v5sTu.png</image></template>
+</category>
+<category>
+    <pattern>treipat</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://i.imgur.com/qDXioN8.png</image></template>
+</category>
+<category>
+    <pattern>patrupat</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://i.imgur.com/tZWuq5O.png</image></template>
+</category>
+<category>
+    <pattern>patrucincipat</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://i.imgur.com/S8FPFJz.png</image></template>
+</category>
+<category>
+    <pattern>sasepat</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://i.imgur.com/Oz3Du6V.png</image></template>
+</category>
+<category>
+    <pattern>saptepat</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://i.imgur.com/A6Vy3gi.png</image></template>
+</category>
+<category>
+    <pattern>optpat</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://i.imgur.com/nblrzeW.png</image></template>
+</category>
+<category>
+    <pattern>nouapat</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://i.imgur.com/c7yx9pQ.png</image></template>
+</category>
+<category>
+    <pattern>sutapat</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://i.imgur.com/tILjrJK.png</image></template>
+</category>
+<!-- aici se termina natura boxed -->
+
+<!-- aici e cu oameni boxed -->
+<category>
+    <pattern>oamenigrup</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafilt</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafilt</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>zepa</postback>
+</button><button>
+    <text>50%</text>
+    <postback>fity</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>sasuta</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>zepa</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>ze</postback>
+</button><button>
+    <text>20%</text>
+    <postback>do</postback>
+</button><button>
+    <text>30%</text>
+    <postback>tr</postback>
+</button><button>
+    <text>40%</text>
+    <postback>pa</postback>
+</button><button>
+    <text>45%</text>
+    <postback>paci</postback>
+</button></template>
+</category>
+<category>
+    <pattern>fity</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.
+<image>https://i.imgur.com/OdO7b75.png</image></template>
+</category>
+<category>
+    <pattern>sasuta</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>sa</postback>
+</button><button>
+    <text>70%</text>
+    <postback>sap</postback>
+</button><button>
+    <text>80%</text>
+    <postback>op</postback>
+</button><button>
+    <text>90%</text>
+    <postback>no</postback>
+</button><button>
+    <text>100%</text>
+    <postback>sut</postback>
+</button></template>
+</category>
+<category>
+    <pattern>ze</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/i2TwWef.png</image></template>
+</category>
+<category>
+    <pattern>do</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://i.imgur.com/fGmfkaT.png</image></template>
+</category>
+<category>
+    <pattern>tr</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://i.imgur.com/PYXeKDY.png</image></template>
+</category>
+<category>
+    <pattern>pa</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://i.imgur.com/Y00g8Z0.png</image></template>
+</category>
+<category>
+    <pattern>paci</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://i.imgur.com/2D2xfj9.png</image></template>
+</category>
+<category>
+    <pattern>sa</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://i.imgur.com/JiT9Pm5.png</image></template>
+</category>
+<category>
+    <pattern>sap</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://i.imgur.com/bzeezaU.png</image></template>
+</category>
+<category>
+    <pattern>op</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://i.imgur.com/kJ7JL16.png</image></template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://i.imgur.com/3DrJVZV.png</image></template>
+</category>
+<category>
+    <pattern>sut</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://i.imgur.com/WTiFJw5.png</image></template>
+</category>
+<!-- aici se termina oameni boxed -->
+
+<!-- aici e cu animale boxed -->
+<category>
+    <pattern>butanimale</pattern>
+    <template>Doresti ca filtrele de imagine respectiv luminozitate / contrast/ expunere a imaginii sa fie adaugat?
+<button>
+    <text>Da</text>
+    <postback>dafil</postback>
+</button><button>
+    <text>Nu</text>
+    <postback>Nu</postback>
+</button></template>
+</category>
+<category>
+    <pattern>dafil</pattern>
+    <template>Grozav! Ti-am pregatit mai jos imagina procesata cu un set de procentaje in 3 categorii!
+<button>
+    <text>10% - 45%</text>
+    <postback>tenfor</postback>
+</button><button>
+    <text>50%</text>
+    <postback>fiffif</postback>
+</button><button>
+    <text>60%-100%</text>
+    <postback>sixhund</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>tenfor</pattern>
+    <template>Okay, alegeti procentajul potrivit:
+<button>
+    <text>10%</text>
+    <postback>unuzece</postback>
+</button><button>
+    <text>20%</text>
+    <postback>unudoi</postback>
+</button><button>
+    <text>30%</text>
+    <postback>unutrei</postback>
+</button><button>
+    <text>40%</text>
+    <postback>unupatru</postback>
+</button><button>
+    <text>45%</text>
+    <postback>unupatrucinci</postback>
+</button></template>
+</category>
+<category>
+    <pattern>fiffif</pattern>
+    <template>Iti prezentam imaginea modificata cu 50%.
+<image>https://i.imgur.com/ZAFBvHQ.png</image></template>
+</category>
+<category>
+    <pattern>sixhund</pattern>
+    <template>Okay, alege procentajul potrivit:
+<button>
+    <text>60%</text>
+    <postback>unusase</postback>
+</button><button>
+    <text>70%</text>
+    <postback>unusapte</postback>
+</button><button>
+    <text>80%</text>
+    <postback>unuopt</postback>
+</button><button>
+    <text>90%</text>
+    <postback>ununoua</postback>
+</button><button>
+    <text>100%</text>
+    <postback>unasuta</postback>
+</button></template>
+</category>
+<category>
+    <pattern>unuzece</pattern>
+    <template>Aici este varianta cu 10%.Speram ca iti place.
+<image>https://i.imgur.com/y2UtNzB.png</image></template>
+</category>
+<category>
+    <pattern>unudoi</pattern>
+    <template>Aici este varianta cu 20%.Speram ca iti place.
+<image>https://i.imgur.com/KdE1y5U.png</image></template>
+</category>
+<category>
+    <pattern>unutrei</pattern>
+    <template>Aici este varianta cu 30%.Speram ca iti place.
+<image>https://i.imgur.com/25H8AQ1.png</image></template>
+</category>
+<category>
+    <pattern>unupatru</pattern>
+    <template>Aici este varianta cu 40%.Speram ca iti place
+<image>https://i.imgur.com/xCPx3S4.png</image></template>
+</category>
+<category>
+    <pattern>unupatrucinci</pattern>
+    <template>Iti prezentam varianta cu 45%, speram ca iti place
+<image>https://i.imgur.com/5P9HbOv.png</image></template>
+</category>
+<category>
+    <pattern>unusase</pattern>
+    <template>Aici este varianta cu 60%, speram ca iti place.
+<image>https://i.imgur.com/quJVKbN.png</image></template>
+</category>
+<category>
+    <pattern>unusapte</pattern>
+    <template>Iti prezentam varianta cu 70% modificari, speram ca iti place.
+<image>https://i.imgur.com/bGCHEY9.png</image></template>
+</category>
+<category>
+    <pattern>unuopt</pattern>
+    <template>Iti aratam varianta cu 80% modificari,speram ca iti place.
+<image>https://i.imgur.com/AX0vnQb.png</image></template>
+</category>
+<category>
+    <pattern>ununoua</pattern>
+    <template>Varianta cu 90% modificari este aici!Speram ca iti place.
+<image>https://i.imgur.com/bElf0no.png</image></template>
+</category>
+<category>
+    <pattern>unasuta</pattern>
+    <template>Varianta cu 100% modificari este aici! Speram ca iti place
+<image>https://i.imgur.com/9ORedoc.png</image></template>
+</category>
+<!-- aici se termina anmiale boxed -->
+
+</aiml>
